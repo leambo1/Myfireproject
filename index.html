@@ -4,290 +4,816 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ລິວິວຮູບຖ່າຍ</title>
-    <link rel="stylesheet" href="asass/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="cssandjs/style.css">
+    <title>HydroPowerLAO</title>
+    <link rel="stylesheet" href="node/bootstrap5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="acses/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Lao+Looped:wght@100..900&family=Noto+Sans+Lao:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="/acses/image1/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/acses/image1/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/acses/image1/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/acses/image1/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="HydroLoa" />
+    <link rel="manifest" href="/acses/image1/favicons/site.webmanifest" />
+    <link rel="stylesheet" href="node/fontawesome-free-6.7.2-web/fontawesome-free-6.7.2-web/css/all.min.css">
+
 </head>
 
 <body>
     <!-- section navbar -->
-
-    <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-shar size py-1 px-5 text-center">
-            <div class="container">
-                <a href="index.html" class="navbar-brand logo">ຖ່າຍຮູບ</a>
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mynavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="Mynavbar">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link active">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#about" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Myproduct" class="nav-link">product</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Mycontact" class="nav-link">contact</a>
-                        </li>
-                    </ul>
-                </div>
+    <header class="navbar navbar-expand-lg navbar-light bg-ligth fixed-top">
+        <div class="container-fluid px-5">
+            <div class="logo fade-in">
+                <a href="index.html" class="navbar-brand">
+                    <img src="acses/image1/imglogo.png" alt="">
+                    <h4> HydroPowerLAO</h4>
+                </a>
             </div>
-        </nav>
-        <div class="content container">
-            <div class="text-content">
-                <h2>ນັກຖ່າຍຮູບງານອ໊າສມື<b>ໜື່ງຂອງລາວ</b></h2>
-                <h5>ຢາກໄດ້ພາບດີພາບນິ່ງພາບງາມຕ້ອງຊ່າງພາບມືໜື່ງຂອງລາວເທົ່ານັ້ນ</h5>
-                <h6>ມີປະສົບການຫຼາກຫຼາຍຜ່ານການຖ່າຍຮູບມາແລ້ວ ເປັນລ້ານຮູບ</h6>
-                <div class="content-contect">
-                    <a href="">facebook</a>
-                    <a href="">instageme</a>
-                    <a href="">youtoupe</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse fade-in" id="Mynavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">ໜ້າຫຼັກ</a>
+                    </li>
+                    <li class="nav-item"><a href="#Mystorry" class="nav-link"> ຄວາມເປັນມາ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">ສ່ວນຕ່າງໆ</a>
+                    </li>
+                    <li class="nav-item"><a href="#Statistics" class="nav-link"> ພະລັງງານໄຟຟ້າ</a>
+                    </li>
+                    <li class="nav-item"><a href="#Mycontent" class="nav-link"> ຈຸດປະສົງ</a>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal"
+                            data-bs-target="#Mymodalcontact">ຕິດຕໍ່</a>
+                    </li>
+                    <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal" data-bs-target="#Contact">
+                            ກ່ຽວກັບເຮົາ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- section header -->
+    <section class="title">
+        <div class="img-header">
+            <img src="acses/image1/slide1.jpg" alt="">
+            <div class="container-fluid px-5" >
+                <div class="content-img reveal">
+                    <h1 class="my-4">ເຂື່ອນໄຟຟ້າພະລັງງານນ້ຳໃນລາວ</h1>
+                    <h3 class="my-2">ແຫຼ່ງພະລັງງານສະອາດທີ່ສຳຄັນຂອງພູມິພາກອາຊີຕາເວັນອອກສຽງໃຕ້<br>
+                        ສາ້ງຄວາມມັ່ນຄົງທາງພະລັງງານ ແລະ ການພັດທະນາຢ່າງຢັ້ງຢືນ</h3>
                 </div>
             </div>
         </div>
-    </div>
-    <section class="about mt-5" id="about">
-        <div class="container-fluid p-5">
+    </section>
+    <!-- section story -->
+    <section class="story-dam py-5 reveal" id="Mystorry">
+        <div class="container-fluid px-5">
             <div class="row">
-                <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 my-2">
+                <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12 col-12">
+                    <div class="box-over">
+                        <h4 class="text-center">ປະເທດລາວມີເຂື່ອນໄຟຟ້າຫຼາຍແຫ່ງ ເຊິ່ງໃນປະຈູບັນລາວມີທ່າແຮງການຜະລິດ 26000 MW
+                        </h4>
+                    </div>
+                </div>
+                <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
                     <div class="row">
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 my-2">
-                            <img src="asass/img5/img31.avif" alt="" class="img">
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 my-2">
-                            <img src="asass/img5/img12.avif" alt="" class="img">
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 my-2">
-                            <img src="asass/img5/img30.avif" alt="" class="img">
-                        </div>
-                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 my-2">
-                            <img src="asass/img5/img8.avif" alt="" class="img">
+                        <div class="col-12 my-2">
+                            <h5>ກ່ອນຈະເຖິງປະຈຸບັນນີ້ລາວເຮົາເລີ່ມຈາກການສ້າງເຂື່ອນໄຟຟ້າແຫ່ງທຳອິດລາວລາວຢູ່ແຂວງວຽງຈັນຊື່ວ່າ:
+                                "ເຂື່ອນນ້ຳງື່ມ1" ປະຈຸບັນແມ່ນໄດ້ຂະຫຍາຍອອກເປັນຫຼາຍສາຂາ</h5>
                         </div>
                     </div>
-                </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 my-2">
-                    <div class="text-about">
-                        <h4 class="text-center">ຂໍ້ມູນ ແລະ ປະຫວັດຂອງນັກຖ່າຍພາບ</h4>
-                        <h6>ຂ້ອຍເອງໄດ້ເລີ່ມຖ່າຍຮູບເປັນເທ່ີ່ອທຳອິດຕັ້ງແຕ່ອາຍຸໄດ້ 3ເດືອນ ແລະ
-                            ໄດ້ມີຄວາມມັກຮັກໃນການຖ່ານຮຸບຈື່ງເລີ່ມຖ່າຍຮຸບມາ ເຊິ່ງຮຸບທີ່ຂ້ອຍຖ່າຍນັ້ນເປັນເປັນງານອ໊າດ
-                            ຖ່າຍຖພາບທຳມະຊາດ ແລະ ພາບຕ່າງທີ່ເວລາຂ້ອຍເຫັນຂ້ອຍຈະຈັບກ້ອງຂື້ນມາຖ່າຍທັນທີ
-                            ເຊິ່ງທາງລຸ່ມນີ້ແມ່ນປະຫວັດກ່ຽວກັບຂ້ອຍ:</h6>
-                        <ul>
-                            <li>ຂ້ອຍເປັນຄົນລາວແລກທີ່ໄດ້ຮັບລາງວັນຖ່າຍນັກຖ່າຍຮຸບດີເດັ່ນແຫ່ງປີ ຕອນອາຍຸ 2ປີ</li>
-                            <li>ເຄີຍເຂົ້າການແຂ່ງການປະກວດພາບງານອ໊າສຂອງລາວໃນປີ 2013 ຂ້ອຍໄດ້ຮັບລາງວັນທີ່ 1 ຂອງປະເທດລາວ</li>
-                            <li>ຕອນຂ້ອຍອາຍຸໄດ້ 16 ປີຢູ່ໂຮງຮຽນໄດ້ມີການແຂ່ງຂັນ ຖ່າຍຮູບພາຍໃນໂຮງຮຽນຂອງຕົນຂ້ອຍກະໄດ້ທີ່ 1
-                                ຂອງໂຮງຮຽນ ໄດ້ຮັບລາງວັນ 1000000 ກີບ ແລະໄດ້ຮັບ 1 ຫຼຽນທອງ</li>
-                            <li>ພໍຂ້ອຍໄດ້ສຶກສາຢູ່ມໍປາຍ ຊັ້ນມໍ 7 ຂ້ອຍໄດ້ເປັນຕົວແທນໂຮງຮຽນໄປຮ່ວມແຂ່ງຂັນຖ່າຍຮຸບລະດັບແຂວງ ແລະ
-                                ເປັນທີ່ີແນ່ນອນວ່າດ້ວຍພອນສະຫວັນທີ່ມີມາແຕ່ນ້ອຍຂ້ອຍຈື່ງໄດ້ຮັບລາງວັນທີ່ 1 ອີກຕາມເຄີຍ
-                                ພໍກັບມາຈາກການແຂ່ງທາງໂຮງຮຽນກໍ່ໄດ້ມີການມອບໃບຍ້ອນຍໍຂ້ອຍຂັ້ນເມືອງ ແລະ ຂັ້ນໂຮງຮຽນ ທັງໝົດ 2 ໃບ
-                            </li>
-                            <li>ປະຈຸບັນຂ້ອຍເອງມີອາຍຸ 18 ປີ ໄດ້ສຶກສາຢູ່ມະຫາໄລ ແລະ ເປັນຊ່າງຖ່າຍຮູບມືຶ 1 ຂອງມະຫາໄລ
-                                ສະຖານະປະຈຸບັນແມ່ນ ໂສດ ກຳລັງຫາຄູ່ຊີວິດ ແລະ ຂ້ອຍຈະເປັນຊ່າງຖ່າຍຮູບສ່ວນຕົວໃຫ້ເອງ</li>
-                            <li>ຖ້າສົນໃຈ ຕິດຕໍ່ງານ ຫຼື
-                                ວ່າຕ້ອງການຊ່າງພາບສ່ວນຕົວສາມາດຕິດຕໍ່ມາຜ່ານຊ່ອງທາງຕ່າງໆດ້ານລຸ່ມນີ້ໄດ້ເລີຍ:</li>
-                            <div class="content-contect">
-                                <a href="">facebook</a>
-                                <a href="">instageme</a>
-                                <a href="">youtoupe</a>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- section product -->
-    <section class="product" id="Myproduct">
-        <div class="container-fluid p-5">
-            <div class="product-title">
-                <h4>ຜົນງານພາຍຖ່າຍຄ້າວໆຂອງຂ້ອຍ</h4>
-            </div>
-            <p>ພາບທັງໝົດນີ້ເປັນພາບທີ່ຖ່າຍດ້ວຍຄວາມຕັັ້ງໃຈ ແລະ ໃສ່ໃຈໃນທຸກໆລາຍລະອຽດ</p>
-            <div class="row">
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img2.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img3.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img4.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img5.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img6.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img7.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img8.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img9.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img10.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img11.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img12.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img13.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img14.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img15.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img16.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img17.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img18.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img19.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img20.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img21.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img22.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img23.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img24.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img25.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img26.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img27.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img28.avif" alt="" class="img">
-                    </div>
-                </div>
-                <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                    <div class="card-img">
-                        <img src="asass/img5/img29.avif" alt="" class="img">
+                    <div class="row">
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                            <img src="acses/image1/ngem.webp" alt="">
+                        </div>
+                        <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                            <P>ປະຫວັດຄວາມເປັນມາຂອງເຂື່ອນໄຟຟ້ານ້ຳງື່ມ:ການກໍ່ສ້າງ: ເຂື່ອນໄຟຟ້ານ້ຳງື່ມໄດ້ເລີ່ມກໍ່ສ້າງໃນປີ
+                                ຄ.ສ 1968 ໂດຍການຮ່ວມມືກັບບັນດາປະເທດຜູ້ໃຫ້ທຶນເຊັ່ນ:ຍີ່ປຸ່ນ ແລະ ອົງການພັດທະນາສາກົນ.
+                                ມັນໄດ້ສຳເລັດການກໍ່ສ້າງ ແລະ ເປີດໃຊ້ງານຢ່າງເປັນທາງການໃນປີ ຄ.ສ 1971.
+                                ເຂື່ອນໄຟຟ້ານ້ຳງື່ມມີກຳລັງການຜະລິດໄຟຟ້າປະມານ 150 ເມກາວັດ (MW) ໃນເບື້ອງຕົ້ນ ແລະ
+                                ມີບົດບາດສຳຄັນໃນການສະໜອງໄຟຟ້າໃຫ້ແກ່ນະຄອນຫຼວງວຽງຈັນ ແລະ ພາກກາງຂອງປະເທດລາວ. ນອກຈາກນີ້,
+                                ມັນຍັງຊ່ວຍໃນການຄວບຄຸມນ້ຳຖ້ວມ ແລະ ສົ່ງເສີມການລ້ຽງປາ. ໃນປີຕໍ່ມາ,
+                                ເຂື່ອນນ້ຳງື່ມໄດ້ຮັບການປັບປຸງ ແລະ
+                                ຂະຫຍາຍກຳລັງການຜະລິດໄຟຟ້າເພື່ອຕອບສະໜອງຄວາມຕ້ອງການທີ່ເພີ່ມຂຶ້ນຂອງປະເທດ ແລະ
+                                ການສົ່ງອອກໄຟຟ້າໄປຍັງປະເທດໃກ້ຄຽງເຊັ່ນ:ປະເທດໄທ.ຜົນກະທົບຕໍ່ຊຸມຊົນ ແລະ ສິ່ງແວດລ້ອມ
+                                ເຂື່ອນໄຟຟ້ານ້ຳງື່ມຍັງມີຜົນກະທົບຕໍ່ຊີວິດການເປັນຢູ່ຂອງຊຸມຊົນທ້ອງຖິ່ນແລະສິ່ງແວດລ້ອມ.
+                                ມັນໄດ້ສ້າງແຫຼ່ງນ້ຳກັກຂັງທີ່ໃຫຍ່ທີ່ສຸດໃນລາວແລະມີບົດບາດໃນການພັດທະນາການທ່ອງທ່ຽວທາງທຳມະຊາດ
+                            </P>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- section contact -->
-    <section class="contact" id="Mycontact">
-        <div class="container">
+    <!-- section blog -->
+    <section class="blog reveal" id="blog">
+        <div class="container-fluid px-5">
+            <div class="blog-header m-5">
+                <h2 class="text-center"><i class="fas fa-info-circle me-3"></i>ກ່ຽວກັບພະລັງງານເຂື່ອນໄຟຟ້າ
+                </h2>
+            </div>
             <div class="row">
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 my-5 form-header">
-                    <h3 class="text-center">CONTACT</h3>
-                    <h4>ສາມາດຕິດຕໍ່ງານ ຫຼື ສາມາດຕິດຕໍ່ເພື່ອ ສອບຖາມຂໍ້ມູນຕ່າງໆໄດ້ຕາມທາງຊ່ອງທາງ</h4>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+                    <div class="card w-100" data-bs-toggle="modal" data-bs-target="#detail1">
+                        <div class="card-img-top">
+                            <img src="acses/image1/blog1.avif" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">ການປ່ຽນເປັນພະລັງງານ</h3>
+                            <p class="card-text">ເຂື່ອນຈະມີການກັກເກັບນ້ຳໃວ້ແລ້ວປ່ອຍນ້ຳໃຫ້ໄຫຼລົງຜ່ານທໍ່ ຫຼື ຊ່ອງລະບາຍ ແລະ
+                                ເມື່ອມີນ້ຳໄຫຼຜ່ານເຮັດໃຫ້ເຂື່ອນປັ້ນໄຟເຮັດວຽກແລ້ວສົ່ງກະແສໄຟຟ້າສົ່ງອອກຫາຜູ້ໃຊ້</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="" class="btns" data-bs-toggle="modal" data-bs-target="#detail1">→</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="card p-4 my-5">
-                        <form class="fomr-group">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <label for="" class="form-lable">ຊຶ້</label>
-                                    <input type="text" name="name" class="form-control" placeholder="ປ້ອນຊື່ຂອງທ່ານ">
-                                    <label for="" class="form-lable">ອີເມວ</label>
-                                    <input type="email" name="email" class="form-control" placeholder="example@gmail.com">
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+                    <div class="card w-100" data-bs-toggle="modal" data-bs-target="#detail2">
+                        <div class="card-img-top">
+                            <img src="acses/image1/blog2.webp" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">ປະເພດຂອງເຂື່ອນ</h3>
+                            <p class="card-text">ເຂື່ອນໄຟຟ້າມີຫຼາຍປະເພດເຊັ່ນ: ເຂື່ອນໄຟຟ້າແບບກັ້ນນ້ຳ ,
+                                ເຂື່ອນໄຟຟ້າແບບປ່ອຍໄຫຼຕາມທຳມະຊາດ ແລະ ເຂື່ອນໄຟຟ້າແບບປັບລະດັບນ້ຳ</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="" class="btns" data-bs-toggle="modal" data-bs-target="#detail2">→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+                    <div class="card w-100" data-bs-toggle="modal" data-bs-target="#detail3">
+                        <div class="card-img-top">
+                            <img src="acses/image1/blog3.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">ຕົວຢ່າງເຂື່ອນໃນຂອງລາວ</h3>
+                            <p class="card-text">ລາວເປັນປະເທດໜື່ງທີ່ມີເຂື່ອນໄຟຟ້າຫຼາຍແຫ່ງເຊິ່ງປະຈຸບັນລາວມີທ່າແຮງສູງເຖິງ
+                                26,000 MW ຈາກແມ່ນໍ້າຂອງ ແລະ ສາຂາ, ເຊິ່ງສາມາດເຮັດໃຫ້ລາວເປັນ
+                                ແບດເຕີຣີຂອງອາຊີຕະເວັນອອກສຽງໃຕ້.</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="" class="btns" data-bs-toggle="modal" data-bs-target="#detail3">→</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 my-4">
+                    <div class="card w-100" data-bs-toggle="modal" data-bs-target="#detail4">
+                        <div class="card-img-top">
+                            <img src="acses/image1/blog4.jpg" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">ຜົນດີ ແລະ ຜົນເສຍ</h3>
+                            <p class="card-text">ໃນການສ້າງເຂື່ອນໄຟຟ້າແນ່ນອນວ່າມີຜົນດີແລ້ວກໍ່ຕ້ອງມີຜົນເສຍນຳ
+                                ເຊິ່ງຜົນເສຍສ່ວນຫຼາຍແມ່ນສົ່ງຜົນເສຍຕໍ່ທຳມະຊາດ ແລະ ສັດປ່າໃນຂອບເຂດການສ້າງເຂື່ອນ</p>
+                        </div>
+                        <div class="card-btn">
+                            <a href="" class="btns" data-bs-toggle="modal" data-bs-target="#detail4">→</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- section Statistics -->
+    <section class="statistics container-fluid p-5 my-5 reveal" id="Statistics">
+        <h2 class="text-center section-title">ສະຖິຕິພະລັງງານໄຟຟ້າລາວ</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                <div class="stat-card bg-white p-4 text-center w-100">
+                    <i class="fas fa-bolt fa-3x mb-3"></i>
+                    <h3>10,000+ MW</h3>
+                    <h5>ລາວມີກຳລັງຜະລິດໃນປະຈຸບັນຫຼາຍກວ່າ 10,000 MW</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                <div class="stat-card bg-white p-4 text-center w-100">
+                    <i class="fas fa-water fa-3x mb-3"></i>
+                    <h3>ເຂື່ອນໄຟຟ້າ 80+</h3>
+                    <h5>ເຂື່ອນໃນລາວມີຫຼາຍກວ່າ 80 ແຫ່ງທົ່ວລາວທັງສ້າງແລ້ວ ແລະ ກຳລັງດຳເນີນການກໍ່ສ້າງ</h5>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6 col-12 my-2">
+                <div class="stat-card bg-white p-4 text-center w-100">
+                    <i class="fas fa-globe-asia fa-3x mb-3"></i>
+                    <h3>ສົ່ງອອກໄຟຟ້າ 5 ປະເທດ</h3>
+                    <h5>ໄທ,ຫວຽດນາມ,ກຳປູເຈຍ,ມຽນມາ ແລະ ຈີນ</ຸ>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section modal-detail -->
+    <section class="modal-detail">
+        <!-- modal 1 -->
+        <div class="modal fade" id="detail1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="acses/image1/imglogo.png" alt="">
+                        <h5 class="fw-bold">HydroPowerLAO</h5>
+                        <button class="btn-close btn-secondary" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-detail1">
+                            <div class="container">
+                                <div class="detail-header my-5">
+                                    <h4 class="text-center"><i class="fas fa-cogs me-2"></i>ຂະບວນການປ່ຽນເປັນພະລັງງານ
+                                    </h4>
+                                    <h5 class="niyam">ນິຍາມ:</h5>
+                                    <p>ເຂື່ອນໄຟຟ້າ(HydroelectricDam)ແມ່ນໂຄງສ້າງວິສະວະກຳທີ່ຖືກສ້າງຂຶ້ນເພື່ອກີດຂວາງການໄຫຼຂອງແມ່ນ້ຳ
+                                        ຫຼື ກັບເກັບນ້ຳ ແລ້ວປ່ອຍນ້ຳລົງສູ່ທໍ່ ແລະ
+                                        ປ່ຽນພະລັງງານຈາກນ້ຳໃຫ້ເປັນພະລັງງານໄຟຟ້າໂດຍຜ່ານຂະບວນການຕ່າງໆ</p>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                                    <label for="" class="form-lable">ນາມສະກຸນ</label>
-                                    <input type="text" name="name" class="form-control"
-                                        placeholder="ປ້ອນນາມສະກຸນຂອງທ່ານ">
-                                    <label for="" class="form-lable"> ເບີໂທ</label>
-                                    <input type="number" name="phone" class="form-control" placeholder="020 -xxx-xx-xx">
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/b1.1.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="text-center">ເຂື່ອນໄຟຟ້າ</h5>
+                                            <p>
+                                                ເຂື່ອນແມ່ນອົງປະກອບທີ່ສໍາຄັນ.ບ່ອນທີ່ອຸປະກອນສ່ວນໃຫຍ່ແມ່ນຕິດກັບເຂື່ອນຕົວເຂື່ອນເກັບຮັກສານ້ຳຈໍານວນຫຼວງຫຼາຍ
+                                                ຂ້າງເທິງເຂື່ອນເອີ້ນວ່າພື້ນພິວໜ້ານ້ຳທີ່ໃຊ້ໃນການພັກຜ່ອນ,ຊົນລະປະທານ,ການຜະລິດໄຟຟ້າ
+                                                ແລະ ອື່ນໆ.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/nam-ngum.jpg" alt="ທາງນ້ຳເຂົ້າຂອງເຂື່ອນ">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="my-2 text-center">ປະຕູນ້ຳເຂົ້າ (Intake)</h5>
+                                            <p>
+                                                ປະຕູຮັບນໍ້າແມ່ນປະຕູທີ່ອະນຸຍາດໃຫ້ນໍ້າໄຫຼເຂົ້າສູ່ເຂື່ອນ.ດ້ວຍແຮງໂນ້ມຖ່ວງຂອງແຜ່ນດິນໂລກແລະນໍ້າໜັກຂອງນໍ້າຈະດຶງນໍ້າເຂົ້າໄປໃນເຂື່ອນເມື່ອປະຕູຄວບຄຸມຖືກເປີດ
+                                                ນ້ຳທີ່ມີຄວາມກົດດັນທີ່ຍິ່ງໃຫຍ່ໄຫຼຜ່ານທໍ່ ແລະ ກັງຫັນນ້ຳ.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/kunghun.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="my-2 text-center">ກັງຫັນນ້ຳ (Turbine)</h5>
+                                            <p>
+                                                ກັງຫັນນໍ້າ ( Turbine )
+                                                ນໍ້າທີ່ໄຫຼອອກຈາກທໍ່ນໍ້າຈະໄຫຼໄປຕີໃບພັດຂອງກັງຫັນ.
+                                                ແຮງຂອງນ້ຳແມ່ນມີຄວາມແຮງໃຫຍ່ພຽງພໍທີ່ຈະເຮັດໃຫ້ກັງຫັນນ້ຳຂະຫນາດໃຫຍ່ໝູນໄດ້.
+                                                ເຊິ່ງແກນຂອງກັງຫັນແມ່ນເຊື່ອມຕໍ່ກັບເຄື່ອງກໍາເນີດໄຟຟ້າ, ເຮັດໃຫ້ມັນຫມຸນ ແລະ
+                                                ກໍ່ໃຫ້ເກີດການສ້າງພະລັງງານທີ່ມະຫາສານເກີດຂື້ນ</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/1-hoover-dam-generator-hall-mark-williamson.jpg"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="text-center">ເຄື່ອງກຳເນີດໄຟຟ້າ (Generator)</h5>
+                                            <p>ເຄື່ອງກຳເນີດໄຟຟ້າ(Generator)ເມື່ອກັງຫັນປິ່ນເຄື່ອງກໍາເນີດໄຟຟ້າຈະປິ່ນຕາມຄວາມເຫມາະສົມ.ພາຍໃນມີແມ່ເຫຼັກເຊື່ອມຕໍ່ກັນ.ແມ່ເຫຼັກຍັກປິ່ນໃນລວດທອງແດງ.ການເຄື່ອນໄຫວຂອງເອເລັກໂຕຣນິກເກີດຂື້ນ,ການສ້າງກະແສໄຟຟ້າສະຫຼັບ(AC).
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/AP22200689275383-1536x1151.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="text-center">ໝໍ້ແປງໄຟຟ້າ(Transformer)</h5>
+                                            <p>
+                                                ໝໍ້ແປງໄຟຟ້າ Transformer ໝໍ້ແປງແມ່ນຕັ້ງຢູ່ໃນໂຮງງານໄຟຟ້າ
+                                                ຫຼັງຈາກເຄື່ອງປັ່ນໄຟໄດ້ສ້າງກະແສໄຟຟ້າສຳເລັດ
+                                                ແຕ່ແຮງດັນໄຟຟ້າບໍ່ພຽງພໍ.
+                                                ໜ້າທີ່ຂອງໝໍ້ແປງແມ່ນການເພີ່ມແຮງດັນໃຫ້ກະແສໄຟຟ້າໃຫ້ມີແຮງດັນສູງຈື່ງເຮັດໃຫ້ເກີດກະແສໄຟຟ້າແຮງດັນສູງ
+
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/b1.3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5 class="text-center my-2">ສາຍສົ່ງໄຟຟ້າ(Power lines)</h5>
+                                            <p>
+                                                ສາຍສົ່ງໄຟຟ້າ (Power lines)
+                                                ຫຼັງຈາກປ່ອຍກະແສໄຟຟ້າແຮງດັນສູງແລ້ວ,ຕ້ອງມີອຸປະກອນເພື່ອສົ່ງກະແສໄຟຟ້າໄປຫາສະຖານີໄຟຟ້າທີ່ຢູ່ໄກ.ເຊິ່ງມີສາຍໄຟຟ້າ
+                                                4
+                                                ສາຍສົ່ງອອກຈາກໂຮງງານໄຟຟ້າ.ເຊິ່ງເປັນພະລັງງານໄຟຟ້າສາມເຟດ.ເປັນສາຍໄຟທີ່ມີ3ສາຍໄຟຟ້າ
+                                                ແລະ 1 ສາຍກາງ ຫຼື 1ສາຍດິນ.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal 2 -->
+        <div class="modal fade" id="detail2">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="acses/image1/imglogo.png" alt="">
+                        <h5 class="fw-bold">HydroPowerLAO</h5>
+                        <button class="btn-close btn-secondary" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-detail2">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="header-img-detail">
+                                        <img src="acses/image1/NamOu3dam17.jpg" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="header-detail2">
+                                    <h4 class="text-center my-3">ປະເພດເຂື່ອນໄຟຟ້າ</h4>
+                                    <h6>ເຂື່ອນໄຟຟ້າແບ່ງອອກຫຼັກໆເປັນ 3 ປະເພດຄື: ເຂື່ອນແບບກັກເກັບນ້ຳ,
+                                        ເຂື່ອນແບບໄຫຼຕາມທຳມະຊາດ ແລະ ເຂື່ອນແບບສູບກັບ</h6>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5>1. ເຂື່ອນແບບກັກເກັບນໍ້າ (Storage Dam)</h5>
+                                            <h6>ເຂື່ອນປະເພດນີ້ແມ່ນເຮັດໜ້າທີ່ກັ່ນແມ່ນໍ້າເພື່ອສ້າງອ່າງເກັບນໍ້າໃຫຍ່ໃຊ້ເກັບກັ່ນນໍ້າໃນເວລາທີ່ນໍ້າຫຼາຍ
+                                                ແລະ ປ່ອຍນໍ້າອອກໃນເວລາທີ່ຕ້ອງການຜະລິດໄຟຟ້າຫຼືການນຳໃຊ້ອື່ນໆ</h6>
+                                            <h6>ເອກະລັກ:
+                                                ມີອ່າງເກັບນໍ້າຂະໜາດໃຫຍ່,ຄວບຄຸມປະລິມານນໍ້າໄດ້ຕາມຄວາມຈຳເປັນ,ຜະລິດໄຟໄດ້ຢ່າງສະໝ່ຳສະເໝີ
+                                            </h6>
+                                            <h6>ຂໍ້ດີ: ຜະລິດໄຟໄດ້ຕະຫຼອດປີ ຊ່ວຍກັນນໍ້າຖ້ວມ ແລະ ຊ່ວຍໃນການຊະລໍນໍ້າ</h6>
+                                            <h6>ຂໍ້ເສຍ: ຕ້ອງໃຊ້ພື້ນທີ່ຫຼາຍ ອາດມີຜົນກະທົບຕໍ່ສິ່ງແວດລ້ອມ
+                                                ແລະຊຸມຊົນທີ່ຢູ່ໃກ້ເຄຽງ</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/ngem.webp" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5>2. ເຂື່ອນແບບໄຫຼຜ່ານ(Run-of-River Dam)</h5>
+                                            <h6>ເຂື່ອນປະເພດນີ້ບໍ່ໄດ້ເນັ້ນການເກັບນໍ້າ
+                                                ແຕ່ໃຊ້ນໍ້າທີ່ໄຫຼຜ່ານແມ່ນໍ້າຂອງທຳມະຊາດໃນຂະນະນັ້ນເພື່ອຜະລິດໄຟຟ້າ</h6>
+                                            <h6>ເອກະລັກ:
+                                                ບໍ່ມີອ່າງເກັບນໍ້າໃຫຍ່,ພຶງພາການໄຫຼຂອງນໍ້າທີ່ມີຢູ່ໃນຂະນະນັ້ນ,ໂຄງສ້າງເຂື່ອນຂະໜາດນ້ອຍ
+                                                ແລະ ບໍ່ກະທົບຊຸມຊົນຫຼາຍ</h6>
+                                            <h6>ຂໍ້ດີ: ກະທົບຕໍ່ສິ່ງແວດລ້ອມນ້ອຍ ລາຄາກໍ່ສ້າງຖືກກວ່າເຂື່ອນກັກນໍ້າ</h6>
+                                            <h6>ຂໍ້ເສຍ: ການຜະລິດໄຟຂື້ນກັບປະລິມານນໍ້າໄຫຼ ບໍ່ສາມາດຜະລິດໄຟໄດ້ໃນລະດູແຫ້ງ
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/NamHinboun1site3.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="text-detail">
+                                            <h5>3.ເຂື່ອນແບບສູບກັບ(PumpedStorageDam)</h5>
+                                            <h6>ເຂື່ອນປະເພດນີ້ໃຊ້ອ່າງນໍ້າສອງຈຸດ(ຂ້າງເທິງແລະຂ້າງລຸ່ມ)
+                                                ເພື່ອເກັບພະລັງງານທີ່ຜະລິດໄດ້ໃນເວລາທີ່ໄຟຫຼາຍແລະນໍ້າເຫຼືອ
+                                                ດ້ວຍການສູບນໍ້າຂຶ້ນອ່າງເທິງແລ້ວປ່ອຍລົງເພື່ອຜະລິດໄຟໃນເວລາທີ່ຕ້ອງການ</h6>
+                                            <h6>ເອກະລັກ:ເປັນການກັກແລະປ່ອຍນໍ້າຢ່າງໄວ້ຫຼັງກັນຄວບຄຸມການຜະລິດໄຟຟ້າໄດ້ເຕັມທີ</h6>
+                                            <h6>ຂໍ້ດີ:ສາມາດເກັບພະລັງງານໄຟຟ້າໄວ້ໃຊ້ໃນຍາມທີ່ຕ້ອງການ</h6>
+                                            <h6>ຂໍ້ເສຍ:ຕ້ອງມີພູທີ່ມີຄວາມສູງເພື່ອເຮັດລະດັບນໍ້າຕົ້ນທຶນການກໍ່ສ້າງສູງ</h6>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12 my-2">
+                                        <div class="detail-img">
+                                            <img src="acses/image1/Pumped-hydro-storage-2-scaled.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal 3 -->
+        <div class="modal fade " id="detail3">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="acses/image1/imglogo.png" alt="">
+                        <h5 class="fw-bold">HydroPowerLAO</h5>
+                        <button class="btn-close btn-secondary" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-detail3">
+                            <!-- carousel modal -->
+                            <div class="carousel slide " data-bs-ride="carousel" id="Mycarousel">
+                                <div class="carousel-inner carousel-fade">
+                                    <div class="carousel-item active">
+                                        <img src="acses/image1/namthurn 2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="acses/image1/namthurn2.1.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="acses/image1/namthurn2.2.jpg" alt="" class="d-block w-100">
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#Mycarousel"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#Mycarousel"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-12">
-                                    <label for="" class="form-lable">ລາຍລະອຽດ</label>
-                                    <textarea name="textarea" id="" class="form-control" placeholder="ລາຍລະອຽດທີ່ຕ້ອງການຕິດຕໍ່"></textarea>
-                                </div>
-                                <div class="col-12 d-flex justify-content-center mt-3">
-                                    <button type="submit" class="btn">ສົ່ງຂໍ້ມູນ</button>
+                                    <div class="text-detail">
+                                        <h5 class="text-center my-3">ເຂື່ອນໄຟຟ້ານ້ຳເທີນ 2</h5>
+                                        <p>ເຂື່ອນໄຟຟ້ານ້ຳເທີນ 2 (Nam Theun 2 Hydroelectric Power Project)
+                                            ແມ່ນໂຄງການພະລັງງານໄຟຟ້າໃຫຍ່ທີ່ສຳຄັນຂອງລາວ ແລະ
+                                            ເປັນໜຶ່ງໃນໂຄງການລະດັບພາກພື້ນ.ຕັ້ງຢູ່ທາງພາກກາງຂອງລາວຢູ່ເມືອງ ນາກາຍ ແຂວງຄຳມ່ວນ
+                                            ເຊິ່ງເຂື່ອນນີ້ສ້າງຂື້ນໃນປີ 2005 ແລະ ໄດ້ສ້າງສຳເລັດເປີດນຳໃຊ້ເປັນທາງການໃນປີ
+                                            2010 ໂດຍການຮ່ວມມືລະຫວ່າງ 3ປະເທດຄື: ລາວ, ໄທ ແລະ ຝຣັ່ງ ເຂື່ອນນ້ຳເທີນ 2
+                                            ນີ້ເປັນເຂື່ອນປະເພດກັກເກັບນ້ຳ ມີກຳລັງຜະລິດຢູ່ທີ່ 1070 MW
+                                            ສາມາດຜະລິດໄຟຟ້າຕໍ່ປີສະເລ່ຍ 6000 GWh ມີເນື້ອທີ່ເກັບນ້ຳ 450 ຕາລາງກິໂລແມັດ
+                                            ເຊິ່ງໃຊ້ງົບປະມານໃນການສ້າງ 1.45ຕື້ໂດລ່າສະຫະລັດ ໂດຍມີໄລຍະສັນຍາ 25 ປີ
+                                            ເລີ່ມແຕ່ປີ 2010​-2035 ຫຼັງຈາກໝົດສັນຍາແລ້ວຈະສົ່ງມອບຄືນໃຫ້ລັດທະບານລາວ
+                                            ກ່ຽວກັບການຈັດສົ່ງໄຟຟ້າແມ່ນ ສົ່ງໄປປະເທດໄທ 95% ແລະ ອີກ
+                                            5% ແມ່ນໃຊ້ພາຍໃນປະເທດ
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- modal 4 -->
+        <div class="modal fade" id="detail4">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="acses/image1/imglogo.png" alt="">
+                        <h5 class="fw-bold">HydroPowerLAO</h5>
+                        <button class="btn-close btn-secondary" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="content-detail4">
+                            <div class="header-detail4">
+                                <h5 class="text-center my-4">ຜົນດີ ແລະ ຜົນເສຍ</h5>
+                            </div>
+                            <div class="row">
+                                <div class="col-xxl-6">
+                                    <div class="text-detail">
+                                        <h6>ຜົນດີຂອງການສ້າງເຂື່ອນໄຟຟ້າ: </h6>
+                                        <p>ຜະລິດພະລັງງານທົດແທນທີ່ສະອາດເຂື່ອນໄຟຟ້າຊ່ວຍຜະລິດພະລັງງານຈາກແຫຼ່ງທົດແທນ(ເຊັ່ນ:
+                                            ນ້ຳ)ແທນການໃຊ້ນ້ຳມັນ ຫຼື ຖ່ານຫີນທີ່ສ້າງມົນລະພິດຫຼຸດການປ່ອຍອາຍພິດເຮືອນແກ້ວ
+                                            ແລະ
+                                            ຊ່ວຍຕໍ່ສູ້ກັບການປ່ຽນແປງດິນຟ້າອາກາດ.ສ້າງລາຍຮັບໃຫ້ປະເທດການຂາຍໄຟຟ້າໃຫ້ປະເທດໃກ້ຄຽງສາມາດນຳເອົາລາຍຮັບເຂົ້າປະເທດສ້າງວຽກເຮັດງານທຳໃຫ້ປະຊາຊົນທ້ອງຖິ່ນຄວບຄຸມນ້ຳທຳມະຊາດ
+                                            ແລະ ຫຼຸດຜ່ອນອຸບັດຕິເຫດຊ່ວຍຄວບຄຸມການໄຫຼຂອງນ້ຳ ເພື່ອຫຼຸດຄວາມສ່ຽງຈາກນ້ຳຖ້ວມ ຫຼື
+                                            ແຫ້ງແລ້ງສາມາດນຳໃຊ້ນ້ຳໃນການຊົນລະປະທານ ແລະ
+                                            ອຸດສາຫະກຳພັດທະນາໂຄງລ່າງພື້ນຖານການກໍ່ສ້າງເຂື່ອນມັກມີການສ້າງຖະໜົນ ແລະ
+                                            ລະບົບສື່ສານໃໝ່ໆ ທີ່ເປັນປະໂຫຍດຕໍ່ຊຸມຊົນ.
+
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="detail-img">
+                                        <img src="acses/image1/boc4.1.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="text-detail">
+                                        <h6>ຜົນເສຍຂອງການສ້າງເຂື່ອນໄຟຟ້າ: </h6>
+                                        <p>ຜົນກະທົບຕໍ່ສິ່ງແວດລ້ອມການປ່ຽນແປງລະບົບນິເວດ ການກໍ່ສ້າງເຂື່ອນຈະທຳລາຍປ່າໄມ້ ແລະ
+                                            ທຳມະຊາດບໍລິເວນນັ້ນ, ສົ່ງຜົນກະທົບຕໍ່ສັດນ້ຳ ແລະ
+                                            ສັດປ່າການສູນຫາຍຂອງຊັບພະຍາກອນປາ:
+                                            ປາຫຼາຍຊະນິດອາດບໍ່ສາມາດອົບພະຍົບໄປຕາມທຳມະຊາດໄດ້ການຍ້າຍຖິ່ນຖານຂອງຊຸມຊົນຊຸມຊົນທ້ອງຖິ່ນອາດຕ້ອງຍ້າຍອອກຈາກເຂດທີ່ຖືກກໍ່ສ້າງເຂື່ອນ,
+                                            ສົ່ງຜົນກະທົບຕໍ່ວິຖີຊີວິດ ແລະ ວັດທະນະທຳຄວາມ ສ່ຽງດ້ານຄວາມປອດໄພຖ້າເຂື່ອນແຕກ ຫຼື
+                                            ມີບັນຫາດ້ານວິສະວະກຳ,
+                                            ອາດເກີດໄພນ້ຳຖ້ວມຢ່າງຮຸນແຮງການປ່ຽນແປງລະດັບນ້ຳໃຕ້ດິນການສ້າງເຂື່ອນອາດເຮັດໃຫ້ເກີດການປ່ຽນແປງລະດັບນ້ຳໃຕ້ດິນ
+                                            ແລະ ຄຸນນະພາບນ້ຳໃນລຳໄສ້ ຄ່າໃຊ້ຈ່າຍສູງ ແລະ
+                                            ເວລາກໍ່ສ້າງຍາວໂຄງການເຂື່ອນໄຟຟ້າຕ້ອງໃຊ້ທຶນສູງ ແລະ ໃຊ້ເວລາດຳເນີນການຫຼາຍປີ.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xxl-6">
+                                    <div class="detail-img">
+                                        <img src="acses/image1/box4.3.avif" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section content -->
+    <section class="content reveal" id="Mycontent">
+        <div class="container-fluid py-5">
+            <div class="content-title m-5">
+                <h2 class="text-center"><i class="fa-solid fa-bullseye me-3"></i>ຈຸດປະສົງຂອງການສ້າງເຂື່ອນ</h2>
+            </div>
+            <div class="room-content my-5">
+                <div class="mt-3">
+                    <!-- Nav pills -->
+                    <ul class="nav mx-auto" role="">
+                        <li class="button">
+                            <a class=" active" data-bs-toggle="pill" href="#home">ຜະລິດພະລັງງານໄຟຟ້າທີ່ສະອາດ ແລະ
+                                ຍືນຍົງ</a>
+                        </li>
+                        <li class="button">
+                            <a class="" data-bs-toggle="pill" href="#menu1">ສົ່ງເສີມການພັດທະນາເສດຖະກິດ-ສັງຄົມ</a>
+                        </li>
+                        <li class="button">
+                            <a class="" data-bs-toggle="pill" href="#menu2">ຄວບຄຸມ ແລະ ຈັດການນໍ້າໃຫ້ມີປະສິດທິພາບ</a>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div id="home" class="container-fluid tab-pane active">
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <img src="acses/image1/imgheader.jpg" alt="" class="img">
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text">
+                                        <h4 class="my-4"> ຜະລິດພະລັງງານໄຟຟ້າທີ່ສະອາດ ແລະ ຍືນຍົງ</h4>
+                                        <h6>ການຜະລິດໄຟຟ້າຈາກແຫຼ່ງພະລັງງານທົດແທນ ແລະ ສະອາດ ເຊັ່ນ: ເຂື່ອນໄຟຟ້າ
+                                            ແມ່ນມີຄວາມສໍາຄັນຕໍ່ການພັດທະນາແບບຄາບອນຕ່ຳ ແລະ
+                                            ການປົກປ້ອງສິ່ງແວດລ້ອມ. ນີ້ແມ່ນລາຍລະອຽດທີ່ເພີ່ມເຕີມກ່ຽວກັບຫົວຂໍ້ນີ້:</h6>
+
+                                        <ol id="Mycontent">
+                                            <li>ຄວາມໝາຍຂອງ "ພະລັງງານສະອາດ ແລະ ຍືນຍົງ"</li>
+                                            <ul>
+                                                <li>ສະອາດ(Clean Energy):ບໍ່ປ່ອຍຄວັນພິດ ຫຼື ອາຍຜິດເຮືອນແກ້ວ (Greenhouse
+                                                    Gases GHG)
+                                                    ເຊິ່ງເປັນສາເຫດຂອງການປ່ຽນແປງດິນຟ້າອາກາດ.</li>
+                                                <li>ຍືນຍົງ (Sustainable Energy):
+                                                    ສາມາດນໍາໃຊ້ໄດ້ໃນຍາວນານໂດຍບໍ່ທໍາລາຍຊັບພະຍາກອນທໍາມະຊາດ
+                                                    ຫຼືສົ່ງຜົນລົບກະທົບຮ້າຍແຮງຕໍ່ລະບົບນິເວດ.
+                                                </li>
+                                            </ul>
+                                            <li>ເຂື່ອນໄຟຟ້າເປັນແຫຼ່ງພະລັງງານສະອາດ ແລະ ຍືນຍົງ</li>
+                                            <ul>
+                                                <li>ເຂື່ອນໄຟຟ້າບໍ່ໄຫຼ່ເຊື້ອໄຟຟອດຊິລິດ ຫຼື
+                                                    ຖ່ານຫີນ,ສະນັ້ນຈຶ່ງບໍ່ປ່ອຍ CO₂ ທີ່ເຮັດໃຫ້ເກີດສະພາບເຮືອນແກ້ວ.</li>
+                                                <li>ຊ່ວຍຫຼຸດຜ່ອນການນໍາໃຊ້ເຊື້ອໄຟຟອດຊິລິດ
+                                                    ຫຼຸດການພິພາດຊັບພະຍາກອນທໍາມະຊາດ ແລະ ການນໍາເຂົ້ານໍ້າມັນ.</li>
+                                                <li>ມີອາຍຸການໃຊ້ງານຍາວ(50-100 ປີ)
+                                                    ເມື່ອກໍ່ສ້າງແລ້ວ,ສາມາດຜະລິດໄຟຟ້າໄດ້ດົນ
+                                                    ໂດຍບໍ່ຕ້ອງປ່ຽນແທນບ່ອນຜະລິດຄືນໃໝ່.</li>
+                                                <li>ຕົ້ນທຶນດ້ານພະລັງງານຕໍ່າ
+                                                    ຫຼັງຈາກກໍ່ສ້າງແລ້ວ,ຕົ້ນທຶນການຜະລິດໄຟຟ້າຈະຖືກກວ່າເຊື້ອໄຟຟອດຊິລິດ.
+                                                </li>
+                                                <li> ສ້າງລາຍຮັບຈາກການສົ່ງອອກລາວສາມາດຂາຍໄຟຟ້າໃຫ້ປະເທດໃກ້ຄຽງເຊັ່ນ:
+                                                    ໄທ,ຈີນ, ຫວຽດນາມ.</li>
+                                            </ul>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu1" class="container-fluid tab-pane fade">
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <img src="acses/image1/blog2.4.jpg" alt="" class="img">
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text">
+                                        <h4 class="my-4">ສົ່ງເສີມການພັດທະນາເສດຖະກິດ-ສັງຄົມ ໂດຍຜ່ານການສ້າງເຂື່ອນໄຟຟ້າ
+                                        </h4>
+                                        <h6>ການກໍ່ສ້າງເຂື່ອນໄຟຟ້າບໍ່ພຽງແຕ່ສ້າງພະລັງງານໄຟຟ້າເທົ່ານັ້ນ,
+                                            ແຕ່ຍັງສາມາດສົ່ງເສີມການພັດທະນາເສດຖະກິດ ແລະ ສັງຄົມ
+                                            ຢ່າງກວ້າງຂວາງ.ນີ້ແມ່ນລາຍລະອຽດທີ່ເພີ່ມເຕີມ:</h6>
+
+                                        <ol id="Mycontent">
+                                            <li>ສ້າງລາຍຮັບໃຫ້ປະເທດ</li>
+                                            <ul>
+                                                <li>ການສົ່ງອອກໄຟຟ້າ:ລາວມີນະໂຍບາຍ"ເປັນແຫຼ່ງພະລັງງານຂອງອາຊຽນ"ໂດຍສົ່ງອອກໄຟຟ້າໄປປະເທດໃກ້ຄຽງເຊັ່ນ:ໄທ(ສົ່ງອອກຫຼາຍກວ່າ
+                                                    7,000 ເມກາວັດ),ຫວຽດນາມ(ກຳນົດຂື້ນເຖິງ 5,000
+                                                    ເມກາວັດ),ຈີນ(ຜ່ານແຂວງຢູນນານ)</li>
+                                                <li>ລາຍຮັບຈາກພາສີ ແລະ ຄ່າສຳປະທານ:
+                                                    ລັດຖະບານໄດ້ຮັບລາຍຮັບຈາກບໍລິສັດຕ່າງປະເທດທີ່ລົງທຶນໃນໂຄງການເຂື່ອນ.</li>
+                                            </ul>
+                                            <li> ດຶງດູດການລົງທຶນຕ່າງປະເທດ</li>
+                                            <ul>
+                                                <li>ໂຄງການເຂື່ອນໄຟຟ້າເຊັ່ນ ເຂື່ອນໄຊຍະບູລີ, ເຂື່ອນດົງສະຫວາງ,ເຂື່ອນນ້ຳງື່ມ
+                                                    2 ໄດ້ດຶງດູດນັກລົງທຶນຈາກ ຈີນ, ໄທ, ຫວຽດນາມ, ແລະ ຍີ່ປຸ່ນ.</li>
+                                                <li>ນຳໄປສູ່ການພັດທະນາ ລະບົບພື້ນຖານໂຄງລ່າງ ເຊັ່ນ: ຖະໜົນ,ເສັ້ນທາງໄຟຟ້າ,
+                                                    ແລະ ລະບົບຄອມມີວນິເຄຊັນ.</li>
+                                            </ul>
+                                            <li>ສ້າງວຽກເຮັດງານທໍາ ແລະ ຍົກລະດັບຊີວິດປະຊາຊົນ</li>
+                                            <ul>
+                                                <li>ວຽກເຮັດງານທໍາໃນທ້ອງຖິ່ນ: ໃຫ້ວຽກຊ່າງກໍ່ສ້າງ, ພະນັກງານບໍລິຫານ,
+                                                    ແລະຊ່າງຊ້າງດ້ານເຕັກນິກ.</li>
+                                                <li>ການຝຶກອົບຮົມທັກສະ: ຊ່ວຍຍົກລະດັບຄວາມຮູ້ດ້ານ ວິສະວະກຳ ແລະ
+                                                    ພະລັງງານທົດແທນ ໃຫ້ຊາວລາວ.</li>
+                                                <li>ການຂະຫຍາຍຕົວຂອງອຸດສາຫະກຳອື່ນໆ: ເມື່ອມີໄຟຟ້າພຽງພໍ, ອຸດສາຫະກຳເຊັ່ນ:
+                                                    ການຜະລິດ, ການບໍລິການ, ແລະ ການທ່ອງທ່ຽວ ຈະເຕີບໂຕຂຶ້ນ.</li>
+                                            </ul>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="menu2" class="container-fluid tab-pane fade">
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <img src="acses/image1/pill3.jpg" alt="" class="img">
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 text">
+                                        <h4 class="my-3">ການຄວບຄຸມ ແລະ ຈັດການນໍ້າໃຫ້ມີປະສິດທິພາບໂດຍຜ່ານເຂື່ອນໄຟຟ້າ</h4>
+                                        <h6>ການສ້າງເຂື່ອນໄຟຟ້າບໍ່ພຽງແຕ່ຜະລິດໄຟຟ້າເທົ່ານັ້ນແຕ່ຍັງມີບົດບາດສຳຄັນໃນ
+                                            ການຄວບຄຸມ ແລະ ຈັດການນໍ້າໃຫ້ມີປະສິດທິພາບເພື່ອຮັບມືກັບບັນຫານໍ້າຖ້ວມ,
+                                            ແຫ້ງແລ້ງ ແລະ ການແບ່ງປັນນໍ້າຢ່າງຍຸດຕິທຳ. ນີ້ແມ່ນລາຍລະອຽດທີ່ເພີ່ມເຕີມ:</h6>
+
+                                        <ol id="Mycontent">
+                                            <li>ຫຼຸດຜ່ອນຜົນກະທົບຈາກພາວະແຫ້ງແລ້ງ ແລະ ປ້ອງກັນນໍ້າຖ້ວມ</li>
+                                            <ul>
+                                                <li>ກະກຽມຮັບນໍ້າເກີນໄວ້ໃນ"ອ່າງເກັບນໍ້າ"(Reservoir) ແລ້ວ
+                                                    ປ່ອຍນໍ້າອອກຢ່າງຊ້າຍໆເພື່ອຫຼຸດຜ່ອນຄວາມສ່ຽງນໍ້າຖ້ວມລົງເມືອງລຸ່ມນໍ້າ.
+                                                </li>
+                                                <li>ສະຫນອງນໍ້າຊົນລະປະທານ(ດື່ມ,ໃຊ້ໃນຄົວເຮືອນ)ຊົນລະປະທານໃຫ້ກະສິກໍາ(ນາປູກຝັງ,ສວນຜັກ)ຮັກສາລະບົບນິເວດ(ປ້ອງກັນການຕາຍຂອງສັດນໍ້າ).
+                                                </li>
+                                                <li>ການຈັດການລະດັບນໍ້າ:ຮັກສາລະດັບນໍ້າໃຫ້ຢູ່ໃນລະດັບທີ່ເໝາະສົມປ້ອງກັນນໍ້າເກີນລະດັບສູງເກີນໄປອາດເຮັດໃຫ້ເຂື່ອນແຕກ.
+                                                </li>
+                                            </ul>
+                                            <li> ຈັດສັນການແບ່ງປັນນໍ້າຢ່າງຍຸດຕິທຳ</li>
+                                            <ul>
+                                                <li>ການຈັດສັນນໍ້າລະຫວ່າງປະເທດ: ເຂື່ອນໃນແມ່ນໍ້າຂອງເຊັ່ນ:
+                                                    ເຂື່ອນດົງສະຫວາງ
+                                                    ຕ້ອງປະສານງານກັບປະເທດລຸ່ມນໍ້າເພື່ອຮັບປະກັນວ່າການປ່ອຍນໍ້າຈະບໍ່ສົ່ງຜົນລົບໃຫ້ກະສິກອນ
+                                                    ຫຼື ຊຸມຊົນທ້ອງຖິ່ນ.</li>
+                                                <li>ການຈັດສັນນໍ້າພາຍໃນປະເທດ: ເຂື່ອນຊ່ວຍສະຫນອງນໍ້າໃຫ້ແກ່ພື້ນທີ່ກະສິກໍາ
+                                                    ແລະ ອຸດສາຫະກໍາ.</li>
+                                            </ul>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- section marquee -->
+    <section class="company reveal">
+        <div class="container-fluid">
+            <marquee behavior="" direction="left" scrollamount="5px">
+                <div class="marquee-box">
+                    <div class="img-marquee">
+                        <img src="acses/img2/Screenshot 2025-05-07 103410.png" alt="">
+                    </div>
+                    <div class="img-marquee">
+                        <img src="acses/img2/Screenshot 2025-05-07 103653.png" alt="">
+                    </div>
+                    <div class="img-marquee">
+                        <img src="acses/img2/Screenshot 2025-05-07 104302.png" alt="">
+                    </div>
+                    <div class="img-marquee">
+                        <img src="acses/img2/Screenshot 2025-05-07 105632.png" alt="">
+                    </div>
+                    <div class="img-marquee">
+                        <img src="acses/img2/Screenshot 2025-05-07 110024.png" alt="">
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </section>
+
+    <!-- section contact -->
+    <section class="contact">
+        <div class="modal fade" id="Mymodalcontact">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="acses/image1/imglogo.png" alt="">
+                        <h5 class="fw-bold">HydroPowerLAO</h5>
+                        <button class="btn-close btn-secondary" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card p-4">
+                            <form class="form">
+                                <div class="form-title">
+                                    <h3 class="text-center mb-5">ຟອມຕິດຕໍ່</h3>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <label for="" class="form-label">ຊື່</label>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="ປ້ອນຊື່ຂອງເຈົ້າ">
+                                        <label for="" class="form-label">ອີເມວ</label>
+                                        <input type="email" name="email" placeholder="ປ້ອນອີເມວຂອງເຈົ້າ"
+                                            class="form-control">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <label for="" class="form-label">ນາມສະກຸນ</label>
+                                        <input type="text" name="name" class="form-control"
+                                            placeholder="ປ້ອນນາມສະກຸນຂອງເຈົ້າ">
+                                        <label for="" class="form-label">ເບີໂທ</label>
+                                        <input type="number" name="phone" placeholder="ປ້ອນເບີໂທຂອງເຈົ້າ"
+                                            class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="" class="form-label">ລາຍລະອຽດ</label>
+                                        <textarea name="textarea" id="" class="form-control"
+                                            placeholder="ລາຍລະອຽດທີ່ຕ້ອງການຕິດຕໍ່" rows="10px"></textarea>
+                                    </div>
+                                </div>
+                                <div class="gap-4 my-3 d-flex justify-content-end">
+                                    <button class="btn btn-primary rounded px-5 fs-5" type="submit">ສົ່ງຂໍ້ມູນ</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section about -->
+    <section class="about">
+        <div class="modal fade " id="Contact">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>ກ່ຽວກັບຂ້ອຍ</h4>
+                        <button class="btn-close btn-light" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="card">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <div class="modal-image">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                        <h5 class="text-center mt-3">ຂໍ້ມູນສ່ວນຕົວ</h5>
+                                        <h6>ຊື່: ທ້າວ ແລັມໂບ້ ໄຕ່ກະລອມ</h6>
+                                        <h6>ອາຍຸ: 20 ປີ</h6>
+                                        <h6>ສູງ: 158 cm</h6>
+                                        <h6>ສະຖານະ: ໂສດດດ</h6>
+                                        <h6>ເກີດທີ່: ບ້ານບົວມາ ເມືອງນາກາຍ ແຂວງຄຳມ່ວນ </h6>
+                                        <h6>ປະຈຸບັນສຶກສາຢູ່ທີ່: ວິທະຍາໄລ ບີຊີທີ</h6>
+                                        <h6>ຊັ້ນ: ປີ 1 ຫ້ອງ B1/1 ພາກຄ້ຳ</h6>
+                                        <h6>ງານອະດິເລກ: ມັກຫຼິ້ນເກມ ດີດກີຕ້າ ຟັງເພງ</h6>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="contact-about">
+                                            <p class="text-center mt-2">ຊ່ອງທາງຕິດຕໍ່</p>
+                                            <h6>FB: Laembo Taikalom </h6>
+                                            <h6>Whatsapp: 020 541 38 611</h6>
+                                            <a href="https://www.facebook.com/share/19xq4wJiGF/" target="_blank"><i
+                                                    class="fa-brands fa-facebook text-center fa-xl me-3"></i></a>
+                                            <a href="https://wa.me/qr/TLPEYZBWYJCFD1" target="_blank"><i
+                                                    class="fa-brands fa-square-whatsapp text-center fa-xl"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="text-center footer-about">ພັດທະນາໂດຍ: ແລັມໂບ້ ໄຕ່ກະລອມ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -295,55 +821,70 @@
     </section>
 
     <!-- section footer -->
-
-    <footer class="footer py-4">
+    <footer class="footer reveal mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="header-footer">
-                        <h5 class="my-3">ຕິດຕໍ່ທາງ</h5>
-                        <p>ຊື່: ທ້າວ ຈອນສັນ ອະເລັກເຕີ້</p>
-                        <p>ບ້ານ: ໂນນສະຫວາງ ແຂວງຈຳປາສັກ</p>
-                        <p>ເບີໂທ: 020 598 63 377</p>
-                        <p>ມີເມວ: lamboop23@gmail.com</p>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="logo">
+                        <a href="index.html" class="navbar-brand">
+                            <img src="acses/image1/imglogo.png" alt="">
+                            <h4> HydroPowerLAO</h4>
+                        </a>
                     </div>
+                    <p class="my-4">ແຫຼ່ງຂໍ້ມູນຕ່າງໆທີ່ກ່ຽວຂ້ອງກັບເຂື່ອນໄຟຟ້າຂອງລາວ
+                        ມີໃຫ້ຄົບຖ່ວນສາມາດເລື່ອກສຶກສາໄດ້ຕາມສະດວກ</p>
+                    <div class="address">
+                        <p>👉<a href="https://openinframap.org/stats/area/Laos/plants" target="_blank">Open
+                                Infrastructure map: </a>
+                        <p>
+
+                        <p>👉<a
+                                href=" https://www.power-technology.com/data-insights/top-five-hydro-power-plants-in-operation-in-laos">Open
+                                ເພື່ສຶກສາຂໍ້ມູນເພີ່ມເຕີມ</a></p>
+
+                    </div>
+
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="menu-footer">
-                        <h5  class="my-3">ເມນູຕ່າງໆ</h5>
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link active">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#about" class="nav-link">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#Myproduct" class="nav-link">product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#Mycontact" class="nav-link">contact</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <h4 class="my-4">ກ່ຽວກັບໜ້າຂໍ້ມູນ</h4>
+                    <p>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="index.html" class="nav-link active"><i
+                                    class="fas fa-chevron-right me-2"></i>ໜ້າຫຼັກ</a>
+                        </li>
+                        <li class="nav-item"><a href="#Mystorry" class="nav-link"><i class="fas fa-chevron-right me-2"></i> ຄວາມເປັນມາ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#blog" class="nav-link"><i class="fas fa-chevron-right me-2"></i>ສ່ວນຕ່າງໆ</a>
+                        </li>
+                        <li class="nav-item"><a href="Mypower" class="nav-link"><i class="fas fa-chevron-right me-2"></i> ພະລັງງານໄຟຟ້າ</a>
+                        </li>
+                        <li class="nav-item"><a href="#Mycontent" class="nav-link"><i class="fas fa-chevron-right me-2"></i> ຈຸດປະສົງ</a>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal"
+                                data-bs-target="#Mymodalcontact"><i class="fas fa-chevron-right me-2"></i>ຕິດຕໍ່</a>
+                        </li>
+                        <li class="nav-item"><a href="" class="nav-link" data-bs-toggle="modal"
+                                data-bs-target="#Contact"><i class="fas fa-chevron-right me-2"></i>ກ່ຽວກັບເຮົາ</a>
+                        </li>
+                    </ul>
+                    </p>
                 </div>
-                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div class="data-footer">
-                        <h5>ທ່ານສາດມາດສຶກສາຂໍ້ມູນລະອຽດໄດ້ທີ່ :</h5>
-                        <div class="content-contect mt-4">
-                            <a href="">facebook</a>
-                            <a href="">instageme</a>
-                            <a href="">youtoupe</a>
-                        </div>
-                    </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <h4 class="my-4">ຕິດຕໍ່ພວກເຮົາ</h4>
+                    <p><i class="fa-solid fa-location-dot me-3"></i>ບ້ານໂນນສະຫວ່າງ, ເມື່ອງວຽງຄຳ, ແຂວງວຽງຈັນ.</p>
+                    <p><i class="fa-solid fa-phone  me-3"></i>+856 20 541 38 611</p>
+                    <p><i class="fa-solid fa-envelope  me-3"></i>HydroPowerLAO1@gmail.la</p>
                 </div>
             </div>
-            <div class="footer-end mt-4">
-                <p class="text-center">&copy;2025 ນັກຖ່າຍຮູບມື 1 . ສະຫງວນລິຂະສິດ</p>
+            <div class="footer-end">
+                <p>&copy; 2025 HydroPowerLAO .ສະຫງວນລິຂະສິດ </p>
             </div>
         </div>
     </footer>
-    <script src="asass/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="acses/js/script.js"></script>
+    <script src="node/bootstrap5/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
